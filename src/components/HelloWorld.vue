@@ -27,10 +27,12 @@ const count = ref(0);
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
   <div>
+    <el-button type="primary"><i-ep-CircleCloseFilled />Primary</el-button>
     <el-button type="success"><i-ep-SuccessFilled />Success</el-button>
     <el-button type="info"><i-ep-InfoFilled />Info</el-button>
     <el-button type="warning"><i-ep-WarningFilled />Warning</el-button>
     <el-button type="danger"><i-ep-WarnTriangleFilled />Danger</el-button>
+    <el-button type="info"><svg-icon icon-class="demo" />SVG 本地图标</el-button>
   </div>
 </template>
 
