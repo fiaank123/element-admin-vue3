@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ESNext", //编译目标 JavaScript 版本
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": [
