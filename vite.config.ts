@@ -8,7 +8,7 @@ const pathSrc = path.resolve(__dirname, "src");
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
-import Icons from "unplugin-icons/vite";
+import Icons from "unplugin-icons/vite";   //自定义 Icon
 import IconsResolver from "unplugin-icons/resolver";
 
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
