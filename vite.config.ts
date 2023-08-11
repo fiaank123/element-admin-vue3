@@ -11,7 +11,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import Icons from "unplugin-icons/vite";   //自定义 Icon
 import IconsResolver from "unplugin-icons/resolver";
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'; // 通过 vite-plugin-svg-icons 插件整合 Iconfont 第三方图标库实现本地图标
-
+import UnoCSS from 'unocss/vite' //整合 UnoCSS UnoCSS 是一个具有高性能且极具灵活性的即时原子化 CSS 引擎 。
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd());
   //相对路径别名配置，使用 @ 代替 src
@@ -33,7 +33,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
     },
     plugins: [
       vue(),
-      // UnoCSS({}),
+      UnoCSS({ /* options */ }),
       AutoImport({
         // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
         imports: ["vue"],

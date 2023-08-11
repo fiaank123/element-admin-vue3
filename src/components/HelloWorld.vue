@@ -8,7 +8,7 @@ console.log(variables.bgColor);
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="text-h text-red">Vite + Vue</h1>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
