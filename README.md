@@ -1,18 +1,7 @@
-# Vue 3 + TypeScript + Vite
+vue3-element-admin 是基于 vue-element-admin 升级的 Vue3 + Element Plus 版本的后台管理前端解决方案，技术栈为 Vue3 + Vite4 + TypeScript + Element Plus + Pinia + Vue Router 等当前主流框架。
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+相较于其他管理前端框架，vue3-element-admin 的优势在于一有一无 (有配套后端、无复杂封装)：
 
-## Recommended IDE Setup
+配套完整 Java 后端 权限管理系统，开箱即用，提供 OpenAPI 文档 搭配 Apifox 生成 Node、Python、Go 等其他服务端代码；
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+完全基于 vue-element-admin 升级的 Vue3 版本，没有对框架(Element Plus)的组件再封装，上手成本低和扩展性高。
