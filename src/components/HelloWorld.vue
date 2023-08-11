@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
-
 defineProps<{ msg: string }>();
-
 const count = ref(0);
+//使用 SCSS 全局变量
+import variables from "@/styles/variables.module.scss";
+console.log(variables.bgColor);
 </script>
 
 <template>
@@ -34,10 +35,21 @@ const count = ref(0);
     <el-button type="danger"><i-ep-WarnTriangleFilled />Danger</el-button>
     <el-button type="info"><svg-icon icon-class="demo" />SVG 本地图标</el-button>
   </div>
+  <div class="box" />
+  <div>aaaa</div>
+  <div
+    style="width: 100px; height: 100px"
+    :style="{ 'background-color': variables.bgColor }"
+  />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .read-the-docs {
   color: #888;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: $bg-color;
 }
 </style>
