@@ -6,7 +6,7 @@
     "lib": [
       "ESNext",
       "DOM",
-      "DOM.Iterable"
+      "DOM.Iterable",
     ],
     "skipLibCheck": true,
     "baseUrl": ".", // 解析非相对模块的基地址，默认是当前目录
@@ -26,7 +26,11 @@
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "vite/client",
+      "unplugin-icons/types/vue"
+    ],
   },
   "include": [
     "src/**/*.ts",
